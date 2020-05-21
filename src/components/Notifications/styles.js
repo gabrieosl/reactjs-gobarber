@@ -4,6 +4,10 @@ import { lighten } from 'polished';
 
 export const Container = styled.div`
   position: relative;
+<<<<<<< HEAD
+=======
+  z-index: 10;
+>>>>>>> feature: deploy netlify
 `;
 
 export const Badge = styled.button`

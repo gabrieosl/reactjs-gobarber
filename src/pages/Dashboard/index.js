@@ -17,7 +17,11 @@ import api from '~/services/api';
 
 import { Container, Time } from './styles';
 
+<<<<<<< HEAD
 const range = [9, 8, 10, 11, 12, 13, 14, 15, 15, 16, 17, 18, 19, 20];
+=======
+const range = [8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
+>>>>>>> feature: deploy netlify
 
 export default function Dashboard() {
   const [schedule, setSchedule] = useState([]);
@@ -43,7 +47,11 @@ export default function Dashboard() {
           time: `${hour}:00h`,
           past: isBefore(compareDate, new Date()),
           appointment: response.data.find(a =>
+<<<<<<< HEAD
             isEqual(parseISO(a.date), compareDate)
+=======
+            isEqual(parseISO(a.date), parseISO(compareDate))
+>>>>>>> feature: deploy netlify
           ),
         };
       });
@@ -77,6 +85,10 @@ export default function Dashboard() {
           <Time key={time.time} past={time.past} available={!time.appointment}>
             <strong>{time.time}</strong>
             <span>
+<<<<<<< HEAD
+=======
+              {console.log(time)}
+>>>>>>> feature: deploy netlify
               {time.appointment ? time.appointment.user.name : 'Em aberto'}
             </span>
           </Time>
