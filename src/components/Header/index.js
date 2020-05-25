@@ -25,11 +25,7 @@ export default function Header() {
             </div>
             <img
               src={
-<<<<<<< HEAD
-                profile.avatar.url ||
-=======
                 (profile.avatar && profile.avatar.url) ||
->>>>>>> feature: deploy netlify
                 'https://api.adorable.io/avatars/50/abott@adorable.png'
               }
               alt="LALA"

@@ -18,11 +18,7 @@ export default createGlobalStyle`
   }
 
   html, body, #root {
-<<<<<<< HEAD
-    min-height: 100%;
-=======
     height: 100%;
->>>>>>> feature: deploy netlify
   }
 
   body {
